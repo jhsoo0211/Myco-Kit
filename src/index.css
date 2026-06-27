@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-spore-cream: #FEECA7;
+  --color-sprout-moss: #B8E04A;
+  --color-tactile-curiosity: #40C7B9;
+  --color-substrate-brown: #88603D;
+  --color-forest-soil: #463A39;
+  --color-spore-cream-light: #FFF8E1;
+  --font-family-heading: 'SUIT Variable', 'SUIT', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family-body: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+@layer base {
+  html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: var(--font-family-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--color-forest-soil);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-heading);
+  }
+}
