@@ -135,7 +135,7 @@ export default function ScrollExpandMedia({
   const restOfTitle = title ? title.split(' ').slice(1).join(' ') : '';
 
   return (
-    <div ref={sectionRef} className={cn('transition-colors duration-700 ease-in-out overflow-x-hidden w-full', className)}>
+    <div ref={sectionRef} className={cn('transition-colors duration-700 ease-in-out overflow-x-hidden w-full select-none cursor-default', className)}>
       <section className="relative flex flex-col items-center justify-start min-h-[100dvh]">
         <div className="relative w-full flex flex-col items-center min-h-[100dvh]">
           <motion.div

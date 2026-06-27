@@ -22,8 +22,28 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: var(--color-forest-soil);
+    line-height: 1.7;
+    word-break: keep-all;
+    overflow-wrap: break-word;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-heading);
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+  }
+  p {
+    line-height: 1.8;
+  }
+
+  /* 이미지·비디오·SVG 드래그 방지 */
+  img, video, svg {
+    -webkit-user-drag: none;
+    user-drag: none;
+  }
+
+  /* 로고, 아이콘 등 UI 요소 텍스트 선택 방지 */
+  nav, header, footer {
+    user-select: none;
+    -webkit-user-select: none;
   }
 }
