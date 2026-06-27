@@ -1,6 +1,7 @@
 import SectionReveal from '../components/SectionReveal';
 import TextReveal from '../components/TextReveal';
 import { Link } from 'react-router-dom';
+import { MEDIA } from '../config/media';
 
 export default function CaseStudy() {
   return (
@@ -22,7 +23,7 @@ export default function CaseStudy() {
               {/* Case 1 */}
               <div className="flex flex-col md:flex-row gap-12 items-center">
                 <div className="w-full md:w-1/2 aspect-square rounded-3xl overflow-hidden shadow-lg">
-                  <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1000&auto=format&fit=crop" alt="초등학교 수업" className="w-full h-full object-cover" />
+                  <img src={MEDIA.images.education} alt="초등학교 수업" className="w-full h-full object-cover" />
                 </div>
                 <div className="w-full md:w-1/2">
                   <h2 className="text-3xl font-bold text-forest-soil mb-4">서울 OO초등학교 과학 수업</h2>
@@ -39,7 +40,7 @@ export default function CaseStudy() {
               {/* Case 2 */}
               <div className="flex flex-col md:flex-row-reverse gap-12 items-center">
                 <div className="w-full md:w-1/2 aspect-square rounded-3xl overflow-hidden shadow-lg">
-                  <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=1000&auto=format&fit=crop" alt="방과후 방학 캠프" className="w-full h-full object-cover" />
+                  <img src={MEDIA.images.kit} alt="방과후 방학 캠프" className="w-full h-full object-cover" />
                 </div>
                 <div className="w-full md:w-1/2">
                   <h2 className="text-3xl font-bold text-forest-soil mb-4">지역 청소년 센터 친환경 캠프</h2>

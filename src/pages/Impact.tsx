@@ -1,5 +1,6 @@
 import TextReveal from '../components/TextReveal';
 import SectionReveal from '../components/SectionReveal';
+import { MEDIA } from '../config/media';
 
 const stats = [
   { value: '70~90만 톤', label: '연간 폐배지 발생량' },
@@ -41,7 +42,7 @@ export default function Impact() {
       <section className="py-12 px-4 max-w-6xl mx-auto">
         <SectionReveal>
           <div className="relative rounded-3xl overflow-hidden h-[50vh]">
-            <img src="https://images.unsplash.com/photo-1511497584788-876760111969?q=80&w=2000&auto=format&fit=crop" alt="Nature Impact" className="w-full h-full object-cover" />
+            <img src={MEDIA.images.impact} alt="Nature Impact" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-forest-soil/80 to-transparent flex items-end p-12">
               <h2 className="text-3xl md:text-5xl font-bold text-white max-w-2xl">
                 지속 가능한 순환경제,<br/>교육에서 시작됩니다.

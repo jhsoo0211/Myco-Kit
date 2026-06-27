@@ -1,5 +1,7 @@
 import SectionReveal from '../components/SectionReveal';
 import TextReveal from '../components/TextReveal';
+import { Link } from 'react-router-dom';
+import { MEDIA } from '../config/media';
 
 export default function Kit() {
   return (
@@ -50,25 +52,25 @@ export default function Kit() {
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold text-forest-soil mb-4">교육 현장 활용 사례</h2>
               <p className="text-neutral-600 mb-8">아이들의 손끝에서 피어나는 상상력과 생명력</p>
-              <a href="/cases" className="inline-flex items-center gap-2 text-sprout-moss font-bold hover:underline">
+              <Link to="/cases" className="inline-flex items-center gap-2 text-sprout-moss font-bold hover:underline">
                 상세 사례 보기
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/></svg>
-              </a>
+              </Link>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-              <a href="/cases" className="group rounded-2xl overflow-hidden cursor-pointer relative h-80 block">
-                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1000&auto=format&fit=crop" alt="수업 사진" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              <Link to="/cases" className="group rounded-2xl overflow-hidden cursor-pointer relative h-80 block">
+                <img src={MEDIA.images.education} alt="수업 사진" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-black/40 flex items-end p-8">
-                  <h3 className="text-white text-2xl font-bold group-hover:text-sprout-moss transition-colors">초등학교 과학 수업 &rarr;</h3>
+                  <h3 className="text-white text-2xl font-bold group-hover:text-sprout-moss transition-colors">초등학교 과학 수업 →</h3>
                 </div>
-              </a>
-              <a href="/cases" className="group rounded-2xl overflow-hidden cursor-pointer relative h-80 block">
-                <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=1000&auto=format&fit=crop" alt="체험학습 사진" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+              </Link>
+              <Link to="/cases" className="group rounded-2xl overflow-hidden cursor-pointer relative h-80 block">
+                <img src={MEDIA.images.kit} alt="체험학습 사진" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-black/40 flex items-end p-8">
-                  <h3 className="text-white text-2xl font-bold group-hover:text-sprout-moss transition-colors">방과후 방학 캠프 &rarr;</h3>
+                  <h3 className="text-white text-2xl font-bold group-hover:text-sprout-moss transition-colors">방과후 방학 캠프 →</h3>
                 </div>
-              </a>
+              </Link>
             </div>
           </SectionReveal>
         </div>

@@ -1,5 +1,6 @@
 import SectionReveal from '../components/SectionReveal';
 import TextReveal from '../components/TextReveal';
+import { Link } from 'react-router-dom';
 
 export default function Experience() {
   return (
@@ -124,9 +125,9 @@ export default function Experience() {
             
             <div className="mt-16 text-center">
               <p className="text-neutral-600 mb-6">프로그램 도입을 원하시거나 자세한 커리큘럼이 궁금하신가요?</p>
-              <a href="/contact" className="inline-block px-8 py-4 bg-forest-soil text-white font-bold rounded-full hover:bg-forest-soil/90 transition-colors">
+              <Link to="/contact" className="inline-block px-8 py-4 bg-forest-soil text-white font-bold rounded-full hover:bg-forest-soil/90 transition-colors">
                 도입 문의 및 제안서 다운로드
-              </a>
+              </Link>
             </div>
           </SectionReveal>
         </div>

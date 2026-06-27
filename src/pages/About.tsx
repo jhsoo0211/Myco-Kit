@@ -1,5 +1,6 @@
 import TextReveal from '../components/TextReveal';
 import SectionReveal from '../components/SectionReveal';
+import { MEDIA } from '../config/media';
 
 export default function About() {
   return (
@@ -53,7 +54,7 @@ export default function About() {
       <section id="mission" className="px-4 md:px-8 mb-24">
         <SectionReveal>
           <div className="w-full max-w-6xl mx-auto h-[60vh] rounded-3xl overflow-hidden relative">
-            <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=2000&auto=format&fit=crop" alt="Education" className="w-full h-full object-cover" />
+            <img src={MEDIA.images.education} alt="Education" className="w-full h-full object-cover" />
             <div className="absolute inset-0 bg-forest-soil/40 flex items-center justify-center">
               <h2 className="text-3xl md:text-5xl font-bold text-white text-center leading-tight">
                 "모든 생명은 연결되어 있습니다.<br/>MyCo-Kit은 그 연결을 가르칩니다."
@@ -64,7 +65,7 @@ export default function About() {
       </section>
 
       {/* Partnership */}
-      <section className="py-24 bg-white" id="partnership">
+      <section className="py-24 bg-white" id="partnership" data-nav="partnership">
         <div className="container mx-auto px-6 max-w-5xl">
           <SectionReveal>
             <div className="text-center mb-16">
