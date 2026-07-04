@@ -87,7 +87,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="font-semibold text-forest-soil text-sm">이메일</p>
-                      <a href="mailto:myco-kit@googlegroups.com" className="text-sprout-moss hover:underline text-sm">
+                      <a href="mailto:myco-kit@googlegroups.com" className="text-black hover:underline text-sm">
                         myco-kit@googlegroups.com
                       </a>
                     </div>
