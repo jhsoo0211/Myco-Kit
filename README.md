@@ -31,4 +31,8 @@ npm run build
 빌드된 파일은 `dist/` 폴더에 생성됩니다.
 
 ---
-> 사이트의 상세 구조, 콘텐츠 교체 방법, 디자인 시스템 등에 대한 문서는 `SITE_DOCUMENTATION.md` 파일을 참고해주세요.
+## 📄 상세 문서
+사이트 구조·디자인 시스템·콘텐츠 교체 방법·오픈 전 체크리스트 등은 `docs/` 폴더의 문서를 참고하세요.
+- [`docs/SITE_DOCUMENTATION.md`](docs/SITE_DOCUMENTATION.md) — 스크린샷 포함 버전
+- [`docs/SITE_DOCUMENTATION_TEXT.md`](docs/SITE_DOCUMENTATION_TEXT.md) — 텍스트 전용(가벼운) 버전
+- 페이지별 스크린샷: [`docs/screenshots/`](docs/screenshots/)
