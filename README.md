@@ -1,38 +1,74 @@
-# MyCo-Kit Landing Page
+# MyCo-Kit
 
-MyCo-Kit(마이코키트) 프로젝트의 공식 랜딩페이지입니다. 균사체 자원순환 교육 키트의 가치와 비전을 전달하기 위해 제작되었습니다.
+**버섯 폐배지를 자원순환 STEAM 교육 키트로 전환하는 MyCo-Kit의 공식 웹사이트**
 
-## 🚀 기술 스택
-- **Framework**: React 18 + TypeScript + Vite
-- **Styling**: Tailwind CSS v4
-- **Animation**: Framer Motion, GSAP
-- **UI Components**: Radix UI (Navigation Menu), Lucide React (Icons)
+[Live Site](https://ornate-beignet-ae6be6.netlify.app/) · [Portfolio Case Study](https://app.notion.com/p/3b68a4915b168192903ec79b6aa214ff)
 
-## 📦 설치 및 실행 방법
+MyCo-Kit은 균사체 흡음재 아이디어에서 출발해 수요, 원가, 위생, 운영 조건을 검토한 뒤 **버섯 폐배지 기반 교육 키트**로 피벗한 프로젝트입니다. 이 저장소는 문제 정의, 제품 흐름, 교육 가치와 팀 활동을 설명하는 14페이지 웹 MVP를 담고 있습니다.
 
-### 1. 의존성 설치
-프로젝트 폴더(`mycokit-landing`)로 이동한 후 아래 명령어를 실행하여 필요한 패키지를 설치합니다.
+## My Role
+
+`2025.09–현재` · PM
+
+- 제품 기획과 사업 전략, 피벗 근거 정리
+- React/TypeScript 웹 MVP 구현
+- 대외 프로그램·지원서 문서화
+- 콘텐츠, 촬영, 안전 Q&A 구조 설계
+
+## What the Site Covers
+
+- 문제와 자원순환 구조
+- 키트 사용·관찰·성형 과정
+- 교육 프로그램과 기대 학습 결과
+- 팀 소개, FAQ, 문의 흐름
+- 모바일·데스크톱 반응형 경험과 모션
+
+## Tech
+
+| Area | Stack |
+|---|---|
+| Frontend | React 19, TypeScript 6, Vite 8 |
+| Styling | Tailwind CSS 4 |
+| Motion | Framer Motion, GSAP |
+| UI | Radix UI, Lucide React |
+
+## Run Locally
+
 ```bash
 npm install
-```
-
-### 2. 로컬 개발 서버 실행
-설치가 완료되면 개발 서버를 실행하여 브라우저에서 사이트를 확인합니다.
-```bash
 npm run dev
 ```
-기본적으로 `http://localhost:5173/` 주소에서 열립니다. 코드를 수정하면 브라우저에 실시간으로 반영됩니다.
 
-### 3. 프로덕션 빌드
-배포를 위한 최적화된 빌드 파일을 생성하려면 아래 명령어를 사용합니다.
+프로덕션 빌드:
+
 ```bash
 npm run build
+npm run preview
 ```
-빌드된 파일은 `dist/` 폴더에 생성됩니다.
 
----
-## 📄 상세 문서
-사이트 구조·디자인 시스템·콘텐츠 교체 방법·오픈 전 체크리스트 등은 `docs/` 폴더의 문서를 참고하세요.
-- [`docs/SITE_DOCUMENTATION.md`](docs/SITE_DOCUMENTATION.md) — 스크린샷 포함 버전
-- [`docs/SITE_DOCUMENTATION_TEXT.md`](docs/SITE_DOCUMENTATION_TEXT.md) — 텍스트 전용(가벼운) 버전
-- 페이지별 스크린샷: [`docs/screenshots/`](docs/screenshots/)
+## Evidence and Boundaries
+
+확인된 범위:
+
+- 배양·성형에 대한 내부 관찰과 제품 콘셉트 문서
+- U300 성장트랙, The Waffle 4, 건국대 창업동아리, 하나 소셜벤처 활동
+- 현재 공개된 React/TypeScript 웹 MVP
+
+아직 검증하지 않은 범위:
+
+- 파일럿 전환율, 계약, 매출
+- 외부 안전 인증이나 표준화된 교육 효과
+- 일부 문의·결제·외부 미디어 연결의 운영 설정
+
+이 구분은 아이디어의 가능성과 실제 운영 성과가 섞이지 않도록 하기 위한 것입니다.
+
+## Documentation
+
+- [Site documentation](docs/SITE_DOCUMENTATION.md)
+- [Text-only documentation](docs/SITE_DOCUMENTATION_TEXT.md)
+- [Page screenshots](docs/screenshots/)
+
+## Project Status
+
+웹 MVP는 공개되어 있으며, 제품·운영 검증은 진행 중입니다.
+
