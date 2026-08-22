@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      # The current package-lock is out of sync with package.json.
+      # Validate the source build without rewriting repository state in CI.
+      - run: npm install --package-lock=false --no-audit --no-fund
+      - run: npm run build
